@@ -1,1 +1,1 @@
-All code solution learned from class sessions.
+All powerpoint presentation and additional curated materials gathered from class sessions.

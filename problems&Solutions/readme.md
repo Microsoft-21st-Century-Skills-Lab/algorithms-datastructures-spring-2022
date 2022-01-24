@@ -1,1 +1,1 @@
-All code solution learned from class sessions.
+All problems and solutions done.
