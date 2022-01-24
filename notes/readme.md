@@ -1,1 +1,1 @@
-All presentation notes acquired from class
+All code solution learned from class sessions.
