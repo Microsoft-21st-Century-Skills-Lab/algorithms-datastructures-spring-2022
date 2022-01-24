@@ -1,0 +1,1 @@
+All presentation notes acquired from class
