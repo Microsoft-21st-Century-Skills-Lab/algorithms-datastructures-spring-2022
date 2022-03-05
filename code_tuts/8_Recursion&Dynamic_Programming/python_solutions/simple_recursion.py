@@ -3,6 +3,7 @@ RECURSIVE FUNCTIONS
 Author: Sebastian Opiyo
 
 - A simple recursive function example. 
+- Non-DP solution.
 '''
 
 def recursive_func(n)-> int:
