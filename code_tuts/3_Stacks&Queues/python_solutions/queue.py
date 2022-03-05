@@ -1,3 +1,7 @@
+
+'''
+ FIFO - First in First Out Algorithm
+'''
 class Queue:
     def __init__(self) -> None:
         self.items = []
