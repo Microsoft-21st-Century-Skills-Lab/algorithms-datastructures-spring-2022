@@ -7,15 +7,9 @@ Author: Sebastian Opiyo
 
 '''
 
-# Create a cache list
-'''
-def memoize(n:int):
-    cache = [-1 for x in range(n + 1 )]
-    return cache
-
-'''
 # 1. Top-down with memoization
-
+# Number of calls made 6 <fib(n) = n + 1 calls ==> O(n)
+# Time complexity has been reduced from O(2^n) to O(n)
 def calculate_fibonacci(n: int )-> int:
     memoize = [-1 for x in range(n + 1 )]
     return calculate_fibonacci_recur(memoize, n)
@@ -28,6 +22,7 @@ def calculate_fibonacci_recur(memoize, n):
     if memoize[n] >= 0:
         return memoize[n]
     
+    # If not, we calculate and store
     memoize[n] = calculate_fibonacci_recur(memoize, n -1) + calculate_fibonacci_recur(memoize, n - 2)
     return memoize[n]
 
@@ -45,11 +40,11 @@ def calculateFibonacci(n):
 
 if __name__ == '__main__':
     # Top-down
-    # print(f'The 5th Fibonacci is --> {str(calculate_fibonacci(5))}')
+    print(f'The 5th Fibonacci is --> {str(calculate_fibonacci(5))}')
     # print(f'The 10th Fibonacci is --> {str(calculate_fibonacci(10))}')
     # print(f'The 50th Fibonacci is --> {str(calculate_fibonacci(50))}')
 
     # Bottom-up
-    print(f'The 5th Fibonacci is --> {str(calculateFibonacci(5))}')
-    print(f'The 10th Fibonacci is --> {str(calculateFibonacci(10))}')
-    print(f'The 50th Fibonacci is --> {str(calculateFibonacci(50))}')
+    # print(f'The 5th Fibonacci is --> {str(calculateFibonacci(5))}')
+    # print(f'The 10th Fibonacci is --> {str(calculateFibonacci(10))}')
+    # print(f'The 50th Fibonacci is --> {str(calculateFibonacci(50))}')
