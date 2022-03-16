@@ -15,6 +15,7 @@
 """
 
 
+# First Approach
 def selection_sort(alist: list) -> list:
     for to_fill_Slot in range(len(alist) - 1, 0, -1):
         position_of_max = 0
@@ -30,6 +31,26 @@ def selection_sort(alist: list) -> list:
     return alist
 
 
+# Second approach
+def selectionSort(array, size):
+    # determine no of iterations
+    for step in range(size):
+        min_index = step
+
+        for i in range(step + 1, size):
+            if array[i] < array[min_index]:
+                min_index = i
+
+        # swap the elements
+        (array[step], array[min_index]) = (array[min_index], array[step])
+    return array
+
+
 if __name__ == '__main__':
+    # First example
     a_list = [2, 5, 7, 2, 78, 9, 43]
     print(selection_sort(a_list))
+    # Second example
+    data = [-2, 45, 0, 11, -9]
+    size = len(data)
+    print(selectionSort(data, size))
